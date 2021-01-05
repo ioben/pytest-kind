@@ -11,7 +11,7 @@ def test_cluster_name():
 def test_cluster_kubeconfig():
     path = Path("/tmp/test.yaml")
     cluster = KindCluster("foo", path)
-    assert cluster.kubeconfig == path
+    assert cluster.kubeconfig_path == path
 
 
 def test_create_delete():
